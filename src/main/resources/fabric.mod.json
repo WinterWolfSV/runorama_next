@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "runorama_next",
+  "version": "${version}",
+  "name": "Runorama Next",
+  "description": "",
+  "authors": ["liach", "WinterWolfSV"],
+  "contact": {"repo": "https://github.com/what1/testing_fabric_1_15"},
+  "license": "MPL-2.0",
+  "icon": "assets/runorama_next/icon.png",
+  "environment": "client",
+  "entrypoints": {
+	"client": ["com.winterwolfsv.runorama_next.RunoramaNext"],
+	"main": ["com.winterwolfsv.runorama_next.RunoramaNextInit"]
+  },
+  "mixins": [
+	"runorama_next.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": "*",
+	"fabric": "*",
+	"minecraft": "~1.15"
+  }
+}
