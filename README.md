@@ -9,7 +9,7 @@ allows you to easily create a resource pack with your own custom screenshots.
 
 1. Download and install Fabric Loader following the instructions on
    the [Fabric website](https://fabricmc.net/use/installer/).
-2. Download the Runorama Next mod JAR file from the releases page.
+2. Download the Runorama Next mod JAR file from the [releases page](https://modrinth.com/mod/runorama-next/versions).
 3. Move the JAR file to the mods folder in your Minecraft installation directory.
 4. Launch Minecraft with the Fabric profile.
 
