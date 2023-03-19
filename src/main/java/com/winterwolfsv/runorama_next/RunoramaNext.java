@@ -104,8 +104,8 @@ public final class RunoramaNext implements ClientModInitializer {
         client.player.yaw = oldYaw;
 
         client.player.sendMessage(new TranslatableText("runoramanext.shot", new LiteralText(FabricLoader.getInstance().getConfigDir().relativize(contentFolder).toString()).styled(style -> {
-            style.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_FILE, contentFolder.toAbsolutePath().toString()));
-        })));
+            return style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_FILE, contentFolder.toAbsolutePath().toString()));
+        })), false);
 
     }
 
@@ -174,28 +174,28 @@ public final class RunoramaNext implements ClientModInitializer {
         if (!folderPath.exists()) {
             folderPath.mkdirs();
         }
-        ResourceImpl.RESOURCE_IO_EXECUTOR.execute(() -> {
-            try {
-                int width = screenshot.getWidth();
-                int height = screenshot.getHeight();
-                int int_3 = 0;
-                int int_4 = 0;
-                if (width > height) {
-                    int_3 = (width - height) / 2;
-                    width = height;
-                } else {
-                    int_4 = (height - width) / 2;
-                    height = width;
-                }
-                NativeImage saved = new NativeImage(width, height, false);
-                screenshot.resizeSubRectTo(int_3, int_4, width, height, saved);
-                saved.writeFile(folder.resolve("panorama_" + i + ".png"));
-            } catch (IOException var27) {
-                RunoramaNext.LOGGER.warn("Couldn't save screenshot", var27);
-            } finally {
-                screenshot.close();
+
+        try {
+            int width = screenshot.getWidth();
+            int height = screenshot.getHeight();
+            int int_3 = 0;
+            int int_4 = 0;
+            if (width > height) {
+                int_3 = (width - height) / 2;
+                width = height;
+            } else {
+                int_4 = (height - width) / 2;
+                height = width;
             }
-        });
+            NativeImage saved = new NativeImage(width, height, false);
+            screenshot.resizeSubRectTo(int_3, int_4, width, height, saved);
+            saved.writeFile(folder.resolve("panorama_" + i + ".png"));
+        } catch (IOException var27) {
+            RunoramaNext.LOGGER.warn("Couldn't save screenshot", var27);
+        } finally {
+            screenshot.close();
+        }
+
     }
 
     public RunoNextSettings getSettings() {

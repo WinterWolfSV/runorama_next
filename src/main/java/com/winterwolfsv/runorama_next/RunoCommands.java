@@ -73,7 +73,7 @@ public class RunoCommands {
         try {
             String packMcMeta = "{\n" +
                     "  \"pack\": {\n" +
-                    "    \"pack_format\": 5,\n" +
+                    "    \"pack_format\": 6,\n" +
                     "    \"description\": \"" + description + "\"\n" +
                     "  }\n" +
                     "}";
@@ -163,7 +163,7 @@ public class RunoCommands {
     public static void sendPlayerMessage(String message) {
         PlayerEntity player = MinecraftClient.getInstance().player;
         if (player != null) {
-            player.sendMessage(new LiteralText(message));
+            player.sendMessage(new LiteralText(message), false);
         }
     }
 

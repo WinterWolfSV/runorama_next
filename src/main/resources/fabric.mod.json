@@ -3,9 +3,12 @@
   "id": "runorama_next",
   "version": "${version}",
   "name": "Runorama Next",
-  "description": "",
-  "authors": ["liach", "WinterWolfSV"],
-  "contact": {"repo": "https://github.com/what1/testing_fabric_1_15"},
+  "description": "A mod that lets you change the start screen of Minecraft to your own worlds.",
+  "authors": ["liachmodded", "WinterWolfSV"],
+  "contact": {
+	"repo": "https://github.com/WinterWolfSV/runorama_next",
+	"homepage": "https://modrinth.com/user/WinterWolfSV"
+  },
   "license": "MPL-2.0",
   "icon": "assets/icon.png",
   "environment": "client",
@@ -19,6 +22,6 @@
   "depends": {
 	"fabricloader": "*",
 	"fabric": "*",
-	"minecraft": "~1.15"
+	"minecraft": "~1.16"
   }
 }
