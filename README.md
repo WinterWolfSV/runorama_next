@@ -40,7 +40,7 @@ Additionally, the following command can be used to create a resource pack with y
 
 ## Source Code
 
-The source code can be found on [GitHub](https://github.com/WinterWolfSV/) under the MPL-2.0
+The source code can be found on [GitHub](https://github.com/WinterWolfSV/runorama_next) under the MPL-2.0
 License. More information about the license can be found under the [License](#license) section.
 
 ## License
@@ -53,7 +53,8 @@ same license.
 ## Bugs and Feedback
 
 Bug reports can be submitted either through
-the [GitHub Issues](https://github.com/WinterWolfSV/) page of the Runorama Next mod repository or by contacting me
+the [GitHub Issues](https://github.com/WinterWolfSV/runorama_next/issues) page of the Runorama Next mod repository or by
+contacting me
 personally over Discord (WinterWolfSV#9577). Please provide as much information as
 possible, including steps to reproduce the issue, error messages, and any relevant screenshots or log files. Your
 feedback is greatly appreciated and will help improve the mod for all users.

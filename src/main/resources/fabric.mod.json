@@ -7,7 +7,7 @@
   "authors": ["liach", "WinterWolfSV"],
   "contact": {"repo": "https://github.com/what1/testing_fabric_1_15"},
   "license": "MPL-2.0",
-  "icon": "assets/runorama_next/icon.png",
+  "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
 	"client": ["com.winterwolfsv.runorama_next.RunoramaNext"],
